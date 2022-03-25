@@ -1,4 +1,3 @@
-import { NavigateFunction, useNavigate } from "react-router-dom";
 import PortalComponent from "../portal.component/portal.component";
 import "./modal.component.css"
 

@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { NavigateFunction, useNavigate } from "react-router-dom";
+import useGetParameter from "../../../hooks/useGetParameter";
 
 import { GET_PARAMS } from "../../../consts/router";
 import { ValuteEntity } from "../../../entities/valute.entity";
-import useGetParameter from "../../../hooks/useGetParameter";
 import { GetValuteService } from "../../../services/GetValuteService";
+
 import DetailsListPopupComponent from "../details-list.popup.component/details-list.popup.component";
 import ModalComponent from "../modal.component/modal.component"
 

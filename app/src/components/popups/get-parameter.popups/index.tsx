@@ -1,6 +1,6 @@
 import { GET_ENUMS } from "../../../consts/router";
-import DetailsPopupComponent from "../details.popup.component/details.popup.component";
 import useGetPopupState from "./hooks/useGetPopupState";
+import DetailsPopupComponent from "../details.popup.component/details.popup.component";
 
 interface GetParameterPopupsProps {
 }

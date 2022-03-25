@@ -9,6 +9,7 @@
 }
 
 .list-item {
+    margin: 8px;
     padding: 16px;
     display: flex;
     align-items: baseline;

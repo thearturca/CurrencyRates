@@ -9,6 +9,7 @@
 }
 
 .modal-content .list-item {
+    margin: 0;
     padding: 16px;
     display: flex;
     align-items: baseline;

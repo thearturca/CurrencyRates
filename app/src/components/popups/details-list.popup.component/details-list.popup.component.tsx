@@ -8,14 +8,6 @@ interface DetailsListPopupComponentProps {
 }
 
 function DetailsListPopupComponent(props: DetailsListPopupComponentProps) {
-
-  // const sortValutesbyDate = () => {
-  //   props.valutes.sort((a, b) => {
-  //     if (a.date < b.date ) return -1;
-  //     if (a.date > b.date) return 1;
-  //       return 0;
-  //   });
-  // }
   return (
     <ul className="list">
       <li className="list-item list-header">

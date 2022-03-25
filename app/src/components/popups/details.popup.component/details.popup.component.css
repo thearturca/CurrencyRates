@@ -1,0 +1,13 @@
+.modal-content {
+    background-color: #fff;
+}
+
+.modal-main {
+    overflow: auto;
+    max-height: 32em;
+    font-size: 0.9em;
+}
+
+.btn-close {
+    margin-left: 20px;
+}

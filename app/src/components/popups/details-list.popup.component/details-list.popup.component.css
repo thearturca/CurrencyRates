@@ -1,0 +1,58 @@
+.modal-content .list {
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.modal-content .list-item {
+    padding: 16px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border: #f0f0f0 1px solid;
+    background: #ffffff;
+    min-width: 90%;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.modal-content .list-item span {
+    width: 33%;
+}
+
+.modal-content  .list a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.modal-content .list-item .char-code {
+    font-size: 0.75em;
+
+}
+
+.modal-content .list-item .value {
+    font-weight: 700;
+}
+
+.modal-content .list-item .trend {
+    width: auto;
+    font-weight: 700;
+    color: #7a7a7a;
+    font-size: 1em;
+}
+
+.modal-content .list-item .trend-up {
+    color: #3a9c31;
+}
+
+.modal-content .list-item .trend-down {
+    color: #c53434
+}
+
+.modal-content .list-header .trend-header {
+width: auto;
+}

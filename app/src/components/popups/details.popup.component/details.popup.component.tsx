@@ -21,6 +21,7 @@ function DetailsPopupComponent(props: DetailsPopupComponentProps) {
   const valuteName = useGetParameter(GET_PARAMS.valuteName)
 
   const [valuteState, setValuteState] = useState<ValuteEntity[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const navigate: NavigateFunction = useNavigate();
 
   const onClose = () => {
@@ -29,11 +30,13 @@ function DetailsPopupComponent(props: DetailsPopupComponentProps) {
 
   useEffect(() => {
     const getLastTenDays = async () => {
+      setIsLoading(true)
       const res: ValuteEntity[] = await GetValuteService.getLastTenDays();
       const valuteById: ValuteEntity[] =  res.filter((valute) => {
         if (valute.id === valuteId) return valute
       });
       setValuteState([...valuteById]);
+      setIsLoading(false)
     }
     getLastTenDays();
   }, [])
@@ -48,6 +51,7 @@ function DetailsPopupComponent(props: DetailsPopupComponentProps) {
           </header>
           <main className="modal-main">
             <DetailsListPopupComponent valutes={ valuteState }/>
+            {isLoading ? <div className='loading'></div> : null}
           </main>
       </ModalComponent>
     )

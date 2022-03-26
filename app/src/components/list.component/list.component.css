@@ -1,5 +1,6 @@
 .list {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     list-style-type: none;
@@ -9,7 +10,6 @@
 }
 
 .list-item {
-    margin: 8px;
     padding: 16px;
     display: flex;
     align-items: baseline;

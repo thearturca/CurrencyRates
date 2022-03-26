@@ -13,10 +13,10 @@
     padding: 16px;
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: first baseline;
     border: #f0f0f0 1px solid;
     background: #ffffff;
-    min-width: 90%;
+    min-width: 92%;
     cursor: pointer;
     transition: all .3s;
 }

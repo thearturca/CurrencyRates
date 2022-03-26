@@ -2,9 +2,9 @@ import PortalComponent from "../portal.component/portal.component";
 import "./modal.component.css"
 
 interface ModalComponentProps {
+    onClose(): void;
     isOpened: boolean;
     children?: React.ReactNode;
-    onClose(): void;
 }
 
 function ModalComponent(props: ModalComponentProps) {

@@ -4,8 +4,22 @@
 
 .modal-main {
     overflow: auto;
+
     max-height: 32em;
     font-size: 0.9em;
+}
+
+.modal-main::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-main::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.modal-main::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(192, 192, 192);
 }
 
 .btn-close {
